@@ -1,6 +1,6 @@
 <h1>Mapping and Analyzing Bicycle Fatalities in NYC</h1>
 <p>
-Julia Kohn | Command Line GIS Fall 2025 | Rutgers University | Dr. Will Payne
+Julia Kohn | Command Line GIS Fall 2025 | Rutgers University | Dr. Will Payne <br><br>
 </p>
 <p>
 This series of maps analyzes bicycle fatalities in New York City and complexities that surround them. To create the below maps, the following datasets were used:
@@ -12,7 +12,7 @@ This series of maps analyzes bicycle fatalities in New York City and complexitie
 • <strong>NYC Safe Routes to School Priority Schools: </strong> This dataset was found on NYC OpenData, and was updated in 2024. This data was compiled and uploaded by the NYC Department of Transportation. The data was in CSV form. I had no issues with this data. However, I did create a second layer from this to show priority schools overlapping with bike priority districts, which I did by clipping the data to the bike priority districts layer and coloring it differently from the main schools layer in my interactive map. <br><br>
 • <strong>Motor Vehicle Collisions/Crashes (to get bicycle fatality data): </strong> This dataset was found on NYC OpenData, and was updated in 2024. This data was compiled and uploaded by the New York Police Department (NYPD). The data was in CSV form. However, this dataset is huge, with millions of rows...so, to make it easier to use, I filtered it on OpenData before downloading it to only download data with crashes involving a bicycle fatality.<br><br>
 • <strong>Bike Fatality Network (bike routes nearest to a bike fatality): </strong> This dataset was created by performing a spatial join (sjoin.nearest) using the bike network from OSMnx and the cyclist fatality dataset. <br><br>
-• <strong>NYC Arterial Vs. Non-Arterial Roads layer (roads within bike network): </strong> This dataset was created by categorizing the bike network layer (described above) by primary, secondary, or tertiary highways vs. all other roads (as categorized by OSM). This allowed me to show what kind of road my bike fatality network roads are located within.
+• <strong>NYC Arterial Vs. Non-Arterial Roads layer (roads within bike network): </strong> This dataset was created by categorizing the bike network layer (described above) by primary, secondary, or tertiary highways vs. all other roads (as categorized by OSM). This allowed me to show what kind of road my bike fatality network roads are located within.<br><br>
 </p>
 <iframe src="interactivemap.html" height="905" width="102%"></iframe>
 <img src="/FinalProject/bfn_withROADS.png" alt="NYC Bike Fatality Network Map" width="1000">
